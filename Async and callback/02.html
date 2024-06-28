@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #414141;
+        color: white;
+    }
+
+    button {
+        padding: 10px 30px;
+        background: plum;
+        font-size: 20px;
+        border-radius: 25px;
+        border: none;
+        margin-bottom: 15px;
+
+    }
+</style>
+
+<body>
+    <h1 id="intro">Chai Aur Javascript</h1>
+    <button id="btn-1">Start</button><br>
+    <button id="btn-2">Stop</button>
+</body>
+<script>
+    // const button1 = document.getElementById('btn-1')
+    // const button2 = document.getElementById('btn-2')
+
+    // const afterEvent = function (myName) {
+    //     console.log(myName, Date.now());
+    // }
+    // // const Interval = 
+    // //     setInterval(afterEvent, 1000, 'Sharif');
+    // let Interval =
+    //     setInterval(afterEvent, 1000, 'Sharif');
+
+
+    // //    const removeInterval = clearInterval(Interval)
+    // button1.addEventListener('click', function (e) {
+    //     console.log(Interval);
+    // })
+
+    // button2.addEventListener('click', function () {
+    //     clearInterval(Interval)
+        
+    // })
+
+const getVarC = function(callback){
+    setTimeout(function(){
+        console.log(`A function that takes some time`);
+
+    }, 3000)
+}
+const printSomemessge = function(){
+    console.log('another function');
+}
+getVarC(printSomemessge)
+</script>
+
+</html>
